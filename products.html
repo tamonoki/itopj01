@@ -4,10 +4,13 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Bootstrap 101 Template</title>
+	<title>産直connect</title>
 	<!-- Bootstrap -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 	<link rel="stylesheet" href="./css/bootswatch.css">
+	<link href="./css/font-awesome.min.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
 	
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,70 +21,125 @@
 </head>
 <body>
 	<div class="container">
-		<div id="header">
-			<nav class="navbar navbar-default">
-			  <div class="container-fluid">
-			    <div class="navbar-header">
-			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			      </button>
-			      <a class="navbar-brand" href="#">Brand</a>
-			    </div>
-
-			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			      <ul class="nav navbar-nav">
-			        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-			        <li><a href="#">Link</a></li>
-			        <li class="dropdown">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-			          <ul class="dropdown-menu" role="menu">
-			            <li><a href="#">Action</a></li>
-			            <li><a href="#">Another action</a></li>
-			            <li><a href="#">Something else here</a></li>
-			            <li class="divider"></li>
-			            <li><a href="#">Separated link</a></li>
-			            <li class="divider"></li>
-			            <li><a href="#">One more separated link</a></li>
-			          </ul>
-			        </li>
-			      </ul>
-			      <form class="navbar-form navbar-left" role="search">
-			        <div class="form-group">
-			          <input type="text" class="form-control" placeholder="Search">
-			        </div>
-			        <button type="submit" class="btn btn-default">Submit</button>
-			      </form>
-			      <ul class="nav navbar-nav navbar-right">
-			        <li><a href="#">Link</a></li>
-			      </ul>
-			    </div>
-			  </div>
-			</nav>
-			
-			
-			<!-- <nav class="navbar navbar-default navbar-fixed-top">
-				<div class="container-fluid">
-					<div class="navbar-header">
-						<a class="navbar-brand" href="index.html">
-							<strong>産直connect</strong>
-						</a>
-					</div>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html">
+						<strong>産直connect</strong>
+					</a>
 				</div>
-			</nav> -->
+			</div>
+		</nav>
+	</div>
+	<br><br><br>
+	<div class="container">
+		<div class="page-header">
+			<h1>生産物一覧</h1>
 		</div>
-	</div>
-	<h1>Hello, world!</h1>
+		<div>
+			<ul class="list-inline">
+				<div class="row">
+					<div class="col-sm-6 col-md-3 col-lg-2">
+						<li class="thumbnail">
+							<a href="#">
+								<img class="img-rounded media-object" src="./images/products/tanadamai.jpg" width="256" alt="生産者：xxxさん(宮城県xx町)" title="生産者：xxxさん(宮城県xx町)">
+								<div width="256">
+									<h4>
+										<strong>郷清水（ごうしみず）の棚田米</strong>
+									</h4>
+									生活雑排水を全く含まない、摩耶山から凜々と湧き出る湧き水で育てた「棚田米」（若手の連携農家さんが生産した、清らかで優しく美味しいお米です）
+							</a>
+						</li>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-2">
+						<li class="thumbnail">
+							<a href="#">
+								<img class="img-rounded media-object" src="./images/products/nori.jpg" width="256" alt="生産者：xxxさん(宮城県xx町)" title="生産者：xxxさん(宮城県xx町)">
+								<div width="256">
+									<h4>
+										<strong>松島湾産－番摘み－高級の焼海苔</strong>
+									</h4>
+									日本三景松島に浮かぶ浦戸諸島産(全形10枚)焼き海苔を紫外線と湿気から守る包装です。
+							</a>
+							<form class="form-inline">
+								<div class="form-group">
+									<label>数量</label>
+									<input type="number">
+								</div>
+								<button type="submit class="btn btn-default">
+									<i class="fa fa-shopping-cart"></i> レジへ進む
+								</button>
+							</form>
+						</li>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-2">
+						<li class="thumbnail">
+							<a href="#">
+								<img class="img-rounded media-object" src="./images/products/abura.jpg" width="256" alt="生産者：xxxさん(宮城県xx町)" title="生産者：xxxさん(宮城県xx町)">
+								<div width="256">
+									<h4>
+										<strong>たね油「油菜ちゃん」</strong>
+									</h4>
+									 南相馬から自信を持って全国に発信できるブランド開発で生まれた「油菜ちゃん」。ナタネによる農地再生・地域復興のシンボルです。やがては、ナタネの残さいからバイオガスを作り、エネルギーの地産地消と自然循環型の未来を築きたい、そんな夢を描いて生産組合の７人の農家さんが頑張っています。（注釈：放射能で汚染した農地でナタネ・ヒマワリ・大豆などを栽培しても、葉・茎・油粕にはセシウムが残りますが、油には全く移行しません。「油菜ちゃん」も全量検査でセシウムなどの放射能は検出されません。安心してお召し上がり戴けます。
+							</a>
+						</li>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-2">
+						<li class="thumbnail">
+							<a href="#">
+								<img class="img-rounded media-object" src="./images/products/coffee.jpg" width="256" alt="生産者：xxxさん(宮城県xx町)" title="生産者：xxxさん(宮城県xx町)">
+								<div width="256">
+									<h4>
+										<strong>“カフェつぶっこ”（宮城県丸森町）オリジナルブレンドコーヒー<strong>
+									</h4>
+									元気がなくなった宮城県丸森町大張地区を元気にしたいと交流体験自宅カフェ”カフェつぶっこ”を起業した「佐藤真紀さん」の「志」に賛同した、宮城県仙台市で有名な「自家焙煎珈琲まめ坊」さんが共同で開発したオリジナルブレンドコーヒーです。
+							</a>
+						</li>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-2">
+						<li class="thumbnail">
+							<a href="#">
+								<img class="img-rounded media-object" src="./images/products/tofu_kamaboko.jpg" width="256" alt="生産者：xxxさん(宮城県xx町)" title="生産者：xxxさん(宮城県xx町)">
+								<div width="256">
+									<h4>
+										<strong>大豆と白身魚で作られている　「おとうふかまぼこ」セット</strong>
+									</h4>
+									<ul>
+										<li>おとうふかまぼこ真打2枚・おとうふかまぼこ3枚</li>
+										<li>おとうふかまぼこ笹3枚・おとうふかまぼこ小丸生姜3枚</li>
+										<li>おとうふかまぼこお好み焼2枚・直江の揚げかま3枚</li>
+									</ul>
+									 株式会社直江商店は、主力商品の「おとうふかまぼこ」の全国のファンからの応援で、津波で全壊した本社工場を1年2ヶ月後に現地再建しました。まだまだ、傷跡の残る工場周辺、直江の「おとうふかまぼこ」を求めに本社工場隣の直売所には全国からお客様がお越しになっています。
+							</a>
+						</li>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-2">
+						<li class="thumbnail">
+							<a href="#">
+								<img class="img-rounded media-object" src="./images/products/cake.jpg" width="256" alt="生産者：xxxさん(宮城県xx町)" title="生産者：xxxさん(宮城県xx町)">
+								<div width="256">
+									<h4>
+										<strong>シフォンケーキセット</strong>
+									</h4>
+									シフォンケーキは2014年丸森町観光物産協会主催「第4回もりもり特産品大賞（グランプリ）」を獲得しています。
+							</a>
+						</li>
+					</div>
+				</div> <!-- class="row" -->
+			</ul>
+		</div>
+		<div class="bs-component">
+			<div id="footer">
+				Copyrite 2015, 宮城スマートアグリ
+			</div> <!-- div footer -->
+		</div>
+	</div> <!-- container -->
 	
-	<div id="footer">
-	</div>
 	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
 
